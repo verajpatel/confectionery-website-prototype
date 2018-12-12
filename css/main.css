@@ -28,11 +28,13 @@ body {
   text-align: center;
 }
 
-.navigation h1 {
+header div h1 {
   margin: 0;
   padding: .4rem 0;
   font-size: 2rem;
   font-family: 'Tangerine', cursive;
+  text-align: center;
+
 }
 
 .links {
@@ -46,6 +48,7 @@ body {
 
 .links li {
   width: 100%;
+  text-align: center;
 }
 
 .links a {
@@ -61,9 +64,12 @@ body {
   background-color: #805500;
 }
 
+.building {
+  width: 100%;
+}
+
 .main h2 {
   font-size: 1.125rem;
-  color: #fff;
 }
 
 .main p {
@@ -71,7 +77,10 @@ body {
   font-style: italic;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 48px;
+}
+
+.interior {
+  width: 100%;
 }
 
 .promotionals {
@@ -94,7 +103,7 @@ body {
   margin: 0;
 }
 
-.cards p {
+.promotionals p {
   flex-grow: 1;
   margin: 0 0 1.5rem;
 }
@@ -106,14 +115,6 @@ body {
   margin-top: 0;
 }
 
-.cards {
-  display: flex;
-}
-
-.promotionals h1 {
-  font-size: .875rem;
-}
-
 .promotionals div {
   padding: .75rem;
   display: flex;
@@ -122,19 +123,15 @@ body {
 }
 
 .first {
-  width: 25%;
+  width: 100%;
 }
 
 .second {
-  width: 25%;
+  width: 100%;
 }
 
 .third {
-  width: 25%;
-}
-
-.fourth {
-  width: 25%;
+  width: 100%;
 }
 
 .btn {
@@ -147,11 +144,29 @@ body {
   color: #fff;
 }
 
-.btn-small {
-  font-size: .875rem;
-}
-
 .btn:hover {
   background-color: #000;
   border-color: #000;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+
+
 }
