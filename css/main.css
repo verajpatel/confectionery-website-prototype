@@ -22,13 +22,13 @@ body {
   background-color: #b37700;
 }
 
-header {
+.navigation header {
   background-color: #996600;
   color: #fff;
   text-align: center;
 }
 
-h1 {
+.navigation h1 {
   margin: 0;
   padding: .4rem 0;
   font-size: 2rem;
@@ -59,4 +59,99 @@ h1 {
 
 .links a:hover {
   background-color: #805500;
+}
+
+.main h2 {
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.main p {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 48px;
+}
+
+.promotionals {
+  text-align: center;
+}
+
+.promotionals img {
+  width: 100%;
+  display: block;
+}
+
+.cards img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.promotionals div > h1 {
+  font-size: .875rem;
+  margin: 0;
+}
+
+.cards p {
+  flex-grow: 1;
+  margin: 0 0 1.5rem;
+}
+
+.promotionals h2 {
+  font-size: .875rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.cards {
+  display: flex;
+}
+
+.promotionals h1 {
+  font-size: .875rem;
+}
+
+.promotionals div {
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.first {
+  width: 25%;
+}
+
+.second {
+  width: 25%;
+}
+
+.third {
+  width: 25%;
+}
+
+.fourth {
+  width: 25%;
+}
+
+.btn {
+  display: inline-block;
+  padding: .4em .75em .3em;
+  border: 3px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-small {
+  font-size: .875rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
 }
