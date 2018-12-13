@@ -134,19 +134,32 @@ header div h1 {
   width: 100%;
 }
 
-.btn {
-  display: inline-block;
-  padding: .4em .75em .3em;
-  border: 3px solid #333;
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: #333;
+h3 {
+  font-weight: bold;
+}
+
+.contact {
+  font-family: 'Lato', cursive;
+}
+
+.contact .hours {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.hours {
   color: #fff;
 }
 
-.btn:hover {
-  background-color: #000;
-  border-color: #000;
+.phone p {
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.email p {
+  padding: 0;
+  margin-left: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -159,6 +172,22 @@ header div h1 {
     font-size: 110%;
     line-height: 1.4;
   }
+
+  .promotionals {
+  display: flex;
+}
+
+.first {
+  width: 75%;
+}
+
+.second {
+  width: 75%;
+}
+
+.third {
+  width: 75%;
+}
 
 }
 
