@@ -22,8 +22,11 @@ body {
   background-color: #b37700;
 }
 
-.navigation header {
+header {
   background-color: #960;
+}
+
+.navigation header {
   color: #fff;
   text-align: center;
 }
@@ -31,17 +34,16 @@ body {
 header div h1 {
   margin: 0;
   padding: .4rem 0;
-  font-size: 2rem;
-  font-family: 'Tangerine', cursive;
+  font-size: 1.5rem;
+  font-family: "Tangerine", cursive;
   text-align: center;
-
 }
 
 .links {
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
-  font-family: 'Lato', cursive;
+  font-family: "Lato", cursive;
   display: flex;
   list-style-type: none;
 }
@@ -85,6 +87,7 @@ header div h1 {
 
 .promotionals {
   text-align: center;
+  font-family: "Lato", cursive;
 }
 
 .promotionals img {
@@ -139,7 +142,7 @@ h3 {
 }
 
 .contact {
-  font-family: 'Lato', cursive;
+  font-family: "Lato", cursive;
 }
 
 .contact .hours {
@@ -164,6 +167,10 @@ h3 {
 
 @media only screen and (min-width: 25em) {
 
+  header div h1 {
+    font-size: 2rem;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -174,36 +181,71 @@ h3 {
   }
 
   .promotionals {
-  display: flex;
-}
+    display: flex;
+  }
 
-.first {
-  width: 75%;
-}
+  header div h1 {
+    font-size: 3rem;
+  }
 
-.second {
-  width: 75%;
-}
+  .first {
+    width: 75%;
+  }
 
-.third {
-  width: 75%;
-}
+  .second {
+    width: 75%;
+  }
+
+  .third {
+    width: 75%;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .img-flex {
+    position: absolute;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
   html {
-      font-size: 120%;
-      line-height: 1.5;
-    }
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header div h1 {
+    font-size: 4rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .75rem;
+  }
+
+  li {
+    width: auto;
+  }
+
+  h1 {
+    padding-left: 1em;
+  }
+
+  ul {
+    padding-right: 1em;
+  }
 
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
-      font-size: 130%;
-    }
+    font-size: 130%;
+  }
 
 }
