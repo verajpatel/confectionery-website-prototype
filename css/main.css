@@ -200,12 +200,12 @@ h3 {
     width: 75%;
   }
 
-  .main {
-    position: relative;
+  .location {
+    text-align: center;
   }
 
-  .img-flex {
-    position: absolute;
+  .article {
+    text-align: center;
   }
 
 }
