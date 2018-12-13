@@ -35,7 +35,7 @@ header div h1 {
   margin: 0;
   padding: .4rem 0;
   font-size: 1.5rem;
-  font-family: "Tangerine", cursive;
+  font-family: Tangerine, cursive;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ header div h1 {
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
-  font-family: "Lato", cursive;
+  font-family: Lato, cursive;
   display: flex;
   list-style-type: none;
 }
@@ -66,19 +66,13 @@ header div h1 {
   background-color: #805500;
 }
 
-.building {
+.img-flex {
   width: 100%;
+  display: block;
 }
 
 .main h2 {
   font-size: 1.125rem;
-}
-
-.main p {
-  font-size: 1rem;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .interior {
@@ -87,16 +81,11 @@ header div h1 {
 
 .promotionals {
   text-align: center;
-  font-family: "Lato", cursive;
+  font-family: Lato, cursive;
 }
 
 .promotionals img {
   width: 100%;
-  display: block;
-}
-
-.cards img {
-  width: 100px;
   display: block;
   margin: 0 auto 1.5rem;
 }
@@ -142,7 +131,7 @@ h3 {
 }
 
 .contact {
-  font-family: "Lato", cursive;
+  font-family: Lato, cursive;
 }
 
 .contact .hours {
@@ -151,8 +140,13 @@ h3 {
   margin-left: 1rem;
 }
 
-.hours {
-  color: #fff;
+.hours li {
+  text-decoration: none;
+}
+
+.hours a {
+  font-weight: bold;
+  color: #000;
 }
 
 .phone p {
@@ -180,24 +174,8 @@ h3 {
     line-height: 1.4;
   }
 
-  .promotionals {
-    display: flex;
-  }
-
   header div h1 {
     font-size: 3rem;
-  }
-
-  .first {
-    width: 75%;
-  }
-
-  .second {
-    width: 75%;
-  }
-
-  .third {
-    width: 75%;
   }
 
   .location {
@@ -206,6 +184,29 @@ h3 {
 
   .article {
     text-align: center;
+  }
+
+  .promotionals {
+    display: flex;
+  }
+
+  .promotionals img {
+    position: relative;
+  }
+
+  .promotionals p {
+    position: absolute;
+    transform: translate(0, -60%);
+    margin-top: 4.5em;
+    max-width: 29%;
+  }
+
+  .promotionals h4 {
+    position: absolute;
+    transform: translate(7%, -20%);
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 29%;
   }
 
 }
@@ -240,12 +241,36 @@ h3 {
     padding-right: 1em;
   }
 
+  .promotionals h4 {
+    position: absolute;
+    transform: translate(33%, -15%);
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 29%;
+  }
+
+  .promotionals p {
+    margin-left: .33em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
+  }
+
+  .promotionals p {
+    margin-left: .75em;
+  }
+
+  .promotionals h4 {
+    position: absolute;
+    transform: translate(66%, -15%);
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 29%;
   }
 
 }
